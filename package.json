@@ -1,45 +1,19 @@
-
-
-
-
 {
-
   "name": "crazy-parking",
-
   "description": "",
-
   "version": "1.0.0",
-
   "scripts": {
-
     "start":"node index.js"
-
   },
-  "engines" : {
-    "node" : "16.9.0"
-    },
-  "engineStrict" : true,
-
   "repository": {
-
     "type": "git",
-
     "url": ""
-
   },
-
   "keywords": [],
-
   "author": "",
-
   "license": "ISC",
-
   "bugs": {
-
     "url": ""
-
   },
-
   "homepage": ""
-
 }
