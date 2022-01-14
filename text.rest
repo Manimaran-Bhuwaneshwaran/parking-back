@@ -1,0 +1,34 @@
+
+# get All
+GET http://localhost:3000/api/v0/cars/
+###
+
+# get by id
+GET http://localhost:3000/api/v0/cars/61dffdbfd087b675888eaa91
+###
+
+# save
+POST http://localhost:3000/api/v0/cars/
+Content-Type: application/json
+
+{
+    "name": "Manimaran",
+    "vehicleName": "TVS 50",
+    "vehicleNumber": "TN 32 Z 6468",
+    "status" : "IN"
+}
+###
+
+# update by id
+PATCH http://localhost:3000/api/v0/cars/61dffdbfd087b675888eaa91
+Content-Type: application/json
+
+{
+    "status" : "OUT",
+    "exitDate" : "2022-01-13T10:24:50.537Z"
+}
+###
+
+# delect by id
+DELETE http://localhost:3000/api/v0/cars/61dff9087bf3122a70c94c81
+###

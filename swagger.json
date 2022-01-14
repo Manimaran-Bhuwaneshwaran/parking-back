@@ -1,0 +1,65 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Crazy Parking API",
+        "description": "API for car parking lot",
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/v0/cars",
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/": {
+            "get": {
+                "tags": ["Cars"],
+                "summary": "Get all cars",
+                "produces": ["application/json"],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/Car"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Car": {
+            "required": ["vehicleName", "vehicleNumber"],
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "vehicleName": {
+                    "type": "string"
+                },
+                "vehicleNumber": {
+                    "type": "string",
+                    "uniqueItems": true
+                },
+                "entryDate": {
+                    "type": "timestamp"
+                },
+                "exitDate": {
+                    "type": "timestamp"
+                },
+                "status": {
+                    "type": "enum",
+                    "values": [
+                        "IN",
+                        "OUT",
+                        "UN_KNOWN"
+                    ]
+                }
+            }
+        }
+    }
+}
