@@ -42,14 +42,6 @@
 
   },
 
-  "homepage": "",
-  
-  "dependencies" : {
-    "dotenv" : "11.0.0",
-    "express" : "4.17.2",
-    "cros" : "2.8.5",
-    "mongoose" : "6.1.6",
-    "swagger-ui-express" : "4.3.0"
-    }
+  "homepage": ""
 
 }
